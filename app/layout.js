@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
-import Home from "./page";
+
 
 
 
@@ -22,7 +22,7 @@ export default function RootLayout({children}) {
       <body className={`${inter.className}`}>
         <Header />
         <main className="min-h-screen">
-          <Home/>
+          
           {children} 
         </main>
         
