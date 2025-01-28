@@ -8,6 +8,18 @@ module.exports = {
   ],
   theme: {
   	extend: {
+		transformStyle: {
+			'preserve-3d': 'preserve-3d',
+		},
+        backfaceVisibility: {
+			hidden: 'hidden',
+		},
+		backdropBlur: {
+			xs: '2px',
+		},
+		borderWidth: {
+			3: '3px',
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
