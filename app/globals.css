@@ -78,3 +78,9 @@
   transform: rotateX(0deg) scale(1) translateY(40px);
 }
 
+
+.carousel-arrow:hover svg {
+  color: #6366f1; /* Hover color */
+}
+
+

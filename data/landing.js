@@ -108,4 +108,11 @@ import {
       quote:
         "I recommend Welth to all my clients. The multi-currency support and detailed analytics make it perfect for international investors.",
     },
+    {
+      name: "Benedict Yadav",
+      role: "Financial Advisor",
+      image: "https://randomuser.me/api/portraits/men/78.jpg",
+      quote:
+        "I recommend Welth to all my clients. The multi-currency support and detailed analytics make it perfect for international investors.",
+    },
   ];
