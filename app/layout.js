@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "sonner";
 
 
 
@@ -25,7 +26,7 @@ export default function RootLayout({children}) {
           
           {children} 
         </main>
-        
+        <Toaster richColors/>
         <footer className="bg-black py-8">
           <div className="container mx-auto text-center px-4 text-gray-300">
             <p>Made with ❤️ by someone</p>
