@@ -19,11 +19,11 @@ export async function createAccount(data){
     try {
         const { userId } = await auth();
         if (!userId){
-        console.error("No user found")
+        
 
           throw new Error("Unauthorized")
         }
-        console.log("authenticated", userId);
+        
       
 
         const user = await db.user.findUnique({
