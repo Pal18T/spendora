@@ -1,7 +1,8 @@
 "use client"
+import { updateDefaultAccount } from '@/actions/accounts';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Switch } from '@/components/ui/switch';
-import useFetch from '@/hooks/use-fetch';
+import  useFetch  from '@/hooks/use-fetch';
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
 import React, { useEffect } from 'react'
@@ -15,7 +16,7 @@ const AccountCard = ({account}) => {
       fn: updateDefaultFn,
       data: updatedAccount,
       error,
-    } = useFetch();
+    } = useFetch(updateDefaultAccount);
   
     const handleDefaultChange = async (event) => {
       event.preventDefault(); 
